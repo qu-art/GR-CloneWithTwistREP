@@ -26,7 +26,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-7431948412324168672
@@ -178,25 +178,25 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 74296692450626550}
-  - {fileID: 3448026708104744663}
-  - {fileID: -4920059365985297634}
-  - {fileID: -2118028984122464281}
-  - {fileID: -2887918254822892490}
-  - {fileID: 2097857886439300207}
-  - {fileID: 487363016895587344}
-  - {fileID: 2474615544230244868}
-  - {fileID: -5414983155370906982}
-  - {fileID: 3890607151241703366}
-  - {fileID: -4816211384982446672}
   - {fileID: -6809438443836897983}
+  - {fileID: -2541573881125343492}
+  - {fileID: -2887918254822892490}
+  - {fileID: -4816211384982446672}
+  - {fileID: -5414983155370906982}
+  - {fileID: -7431948412324168672}
+  - {fileID: 4143563549496296416}
   - {fileID: 7706757690846458272}
   - {fileID: 4144172725693305330}
-  - {fileID: 426517340671150740}
-  - {fileID: 4143563549496296416}
-  - {fileID: -7431948412324168672}
+  - {fileID: -2118028984122464281}
   - {fileID: 8641552848241196092}
-  - {fileID: -2541573881125343492}
+  - {fileID: 3890607151241703366}
+  - {fileID: 2474615544230244868}
+  - {fileID: -4920059365985297634}
+  - {fileID: 3448026708104744663}
+  - {fileID: 487363016895587344}
+  - {fileID: 2097857886439300207}
+  - {fileID: 74296692450626550}
+  - {fileID: 426517340671150740}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-4920059365985297634
@@ -495,7 +495,7 @@ MonoBehaviour:
   lateLatchingDebug: 0
   optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegions: 0
+  m_hasMigratedMultiviewRenderRegions: 1
   spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &-1878897519336078752
 MonoBehaviour:
@@ -554,25 +554,25 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 6197082964298160271}
-  - {fileID: -90330551682797056}
   - {fileID: -5462116438036512486}
-  - {fileID: -3239881848439784477}
-  - {fileID: -1428430873166226613}
-  - {fileID: -5793895343543574393}
-  - {fileID: -2890206614511005646}
-  - {fileID: -2866545107349123226}
   - {fileID: 3168427129812972341}
-  - {fileID: -7071197535436926}
-  - {fileID: 4285747375449932735}
-  - {fileID: 5512706274325668716}
-  - {fileID: 5462623892566977388}
-  - {fileID: -3504024948529086420}
-  - {fileID: -3393531764861718008}
-  - {fileID: -7096591259398412166}
+  - {fileID: -2890206614511005646}
   - {fileID: 8390900558374957321}
+  - {fileID: -7096591259398412166}
+  - {fileID: 5512706274325668716}
+  - {fileID: -7071197535436926}
+  - {fileID: -3504024948529086420}
+  - {fileID: 5462623892566977388}
   - {fileID: 7188974760425915441}
+  - {fileID: -2866545107349123226}
+  - {fileID: -5793895343543574393}
+  - {fileID: 4285747375449932735}
+  - {fileID: -90330551682797056}
+  - {fileID: -1428430873166226613}
+  - {fileID: -3239881848439784477}
+  - {fileID: 6197082964298160271}
   - {fileID: -3635424298064835212}
+  - {fileID: -3393531764861718008}
   customLoaderName: 
   m_renderMode: 1
   m_latencyOptimization: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &-90330551682797056
