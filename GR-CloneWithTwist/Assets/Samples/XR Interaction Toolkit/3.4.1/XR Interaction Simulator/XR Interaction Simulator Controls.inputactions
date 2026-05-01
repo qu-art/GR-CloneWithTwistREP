@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "XR Interaction Simulator Controls",
     "maps": [
         {
@@ -263,28 +264,6 @@
                     "action": "Y Translate",
                     "isComposite": true,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "2c01790c-a24a-4266-a2e9-74e2a1ca3fa7",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Y Translate",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "f5223aed-93c0-4633-8aa3-c393ce890872",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Y Translate",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "2D Vector",
