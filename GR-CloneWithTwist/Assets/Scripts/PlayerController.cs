@@ -5,12 +5,11 @@ public class PlayerController : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerTrigger"))
+        if (other.CompareTag("Player"))
         {
             Debug.Log("Enetered trigger");
         }
     }
-
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
