@@ -6,16 +6,21 @@ public class Spawn : MonoBehaviour
 {
 
     public GameObject projectile;
+    public GameObject targetPosition;
+
+    [Range(0f,5f)]
+    public float speed = 1f;
 
     public void SpawnSphere()
     {
         int spawnPointX = Random.Range(-10, 10);
         int spawnPointY = Random.Range(10, 20);
         int spawnPointZ = Random.Range(-10, 10);
+        
 
-        Vector3 spawnPosition = new Vector3(spawnPointX, spawnPointY, spawnPointZ);
-
-        Instantiate(projectile, spawnPosition, Quaternion.identity);
+        Instantiate(projectile, projectile.transform.position, Quaternion.identity);
+      
+    
     }
     
 
@@ -29,8 +34,9 @@ public class Spawn : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-       
+        projectile.transform.position = Vector3.MoveTowards(projectile.transform.position, targetPosition.transform.position, speed*Time.deltaTime);
     }
+      
 }
