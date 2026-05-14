@@ -3,26 +3,39 @@ using System.Collections;
 
 public class ReverseGravityUD : MonoBehaviour
 {
-    public Collider coll;
+    
+    private Rigidbody rb;
+    public Vector3 customGravity = new Vector3(0,30f,0);
+    private bool isInside = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        coll = GetComponent<Collider>();
-        coll.isTrigger = true;
+        
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.attachedRigidbody)
-            other.attachedRigidbody.useGravity = false;
+        
+        if (other.GetComponent<Rigidbody>())
+        {
+            rb = other.GetComponent<Rigidbody>();
+            rb.useGravity = false;
+            isInside = true;
+        }
+
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (isInside && rb != null)
+        {
+            rb.AddForce(customGravity, ForceMode.Acceleration);
+             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+        }
 
     }
 }
