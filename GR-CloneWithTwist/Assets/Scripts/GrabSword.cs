@@ -1,31 +1,16 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit;
 using System.Collections;
 using System.Collections.Generic;
 
-public class SpawnTrigger : MonoBehaviour
+public class GrabSword : MonoBehaviour
 {
-
-    public GameObject otherGameObject;
-    public Spawn spawn;
-
-
-    
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
         
     }
-
-    public void OnTriggerEnter (Collider other)
-    {
-         GameObject spawn = GameObject.FindWithTag("Sphere");
-        spawn.GetComponent<Spawn>().SpawnSphere();
-    }
-
-  
-
 
     // Update is called once per frame
     void Update()
